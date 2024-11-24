@@ -4,32 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/greenLime"
     tools:context=".SecondFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izberi igro!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Game Buttons -->
+        <Button
+            android:id="@+id/igra1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Igra1"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
 
         <Button
-            android:id="@+id/button_second"
-            android:layout_width="wrap_content"
+            android:id="@+id/igra2Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/previous"
-            app:layout_constraintBottom_toTopOf="@id/textview_second"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="16dp"
+            android:text="Igra2"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/textview_second"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/igra3Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/lorem_ipsum"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/button_second" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_marginBottom="16dp"
+            android:text="Igra3"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/igra4Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Igra4"
+            android:textSize="18sp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
 </androidx.core.widget.NestedScrollView>
